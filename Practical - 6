@@ -1,0 +1,30 @@
+
+
+Q1.  Write a query to display the current date. Label the column Date.
+
+Input:-
+
+SELECT SYSDATE AS "DATE" FROM DUAL;
+Output:-
+
+
+
+
+Q2. For each employee, display the employee number, job, salary, and salary increased by 15% and expressed as a whole number. Label the column New Salary.
+
+Input:- 
+
+SELECT EMP_NO,EMP_NAME,EMP_SAL,EMP_SAL+(EMP_SAL*15/100) "New Salary" FROM EMPLOYEE2
+Output:-
+
+
+
+
+
+
+Q3. Modify your query no 4. (2) add a column that subtracts the old salary from the new salary. Label the column Increase
+
+Input:- 
+
+SELECT EMP_NO,EMP_NAME,EMP_SAL,EMP_SAL+(EMP_SAL*15/100) "New Salary",(EMP_SAL*15/100) "Increase" FROM EMPLOYEE2
+Output:-
